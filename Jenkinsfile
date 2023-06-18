@@ -3,7 +3,7 @@ pipeline {
    stages {
        stage('Build Code') {
            steps {
-               sh """
+               bat """
                echo "Building Artifact"
                """
            }
