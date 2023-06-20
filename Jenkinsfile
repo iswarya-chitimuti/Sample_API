@@ -17,7 +17,7 @@ pipeline {
                         environment name: 'ENVIRONMENT', value: 'dev'
                     }
                     steps{
-                        echo 'Building the project to dev environment'
+                        echo 'Building the project to development environment'
                     }
                 }
                 stage('qa'){
