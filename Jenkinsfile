@@ -7,7 +7,7 @@ pipeline {
             description: 'Choose the environment to deploy'
         )
    }
-   triggers{scm('* * * * *')}
+   triggers{pollSCM('* * * * *')}
    stages {
        stage('Build') {
             parallel{
