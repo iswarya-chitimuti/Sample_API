@@ -1,11 +1,11 @@
 pipeline {
    agent any
    parameters{
-        choice{
+        choice(
             name: 'ENVIRONMENT',
             choices: ['dev','qa','staging'],
             description: 'Choose the environment to deploy'
-        }
+        )
    }
    triggers{pollSCM('* * * * *')}
    stages {
